@@ -1,16 +1,300 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>HTML 기초</title>
-    <meta name="description" content="HTML 기초를 복습해봅시다" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>어나드범어 | 대구 범어동 프리미엄 아파트</title>
+    <meta
+      name="description"
+      content="대구 수성구 범어동 프리미엄 아파트 어나드범어. 범어역 도보 1분, 명문 학군, 호텔식 컨시어지, 하이엔드 커뮤니티 시설을 갖춘 프리미엄 라이프스타일을 만나보세요."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Material+Symbols+Outlined:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <h1>HTML 태그</h1>
-    <p>태그 종류에 따라 다른 용도를 갖고 있습니다.</p>
-    <p>class="blue"클래스를 지정한 텍스트</p>
-    <id>id를 지정한 텍스트</id>
+    <header class="hero-shell">
+      <div class="topbar container">
+        <div class="brand" aria-label="어나드범어 로고">
+          <img src="https://www.xn--910bx5c8wm5ojda.online/land_logo.png" alt="어나드범어" />
+        </div>
+        <nav class="main-nav" aria-label="메인 네비게이션">
+          <a href="#project-overview">사업안내</a>
+          <a href="#complex-plan">단지배치도</a>
+          <a href="#location">로케이션</a>
+          <a href="#gallery">갤러리</a>
+          <a href="#contact">상담</a>
+        </nav>
+        <a href="#contact" class="pill-btn">잔여호실 상담</a>
+      </div>
+
+      <div class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Honors Beomeo</p>
+          <h1>
+            어나드범어,<br />
+            범어의 자부심<br />
+            <span>그 이상의 가치</span>
+          </h1>
+          <p class="lead">
+            대구의 중심에서 누리는 하이엔드 라이프스타일의 시작.<br />
+            당신만을 위한 특별한 공간이 준비되어 있습니다.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="primary-btn">사전 예약 고객 혜택</a>
+            <a href="#project-overview" class="secondary-btn">사업안내 보기</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <img src="https://www.xn--910bx5c8wm5ojda.online/project-1.webp" alt="어나드범어 외관" />
+          </div>
+        </div>
+      </div>
+
+      <div class="info-strip container">
+        <div class="info-item">
+          <span class="material-symbols-outlined">directions_subway</span>
+          <div>
+            <strong>범어역</strong>
+            <small>도보 1분</small>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="material-symbols-outlined">landscape</span>
+          <div>
+            <strong>영구 조망권</strong>
+            <small>자연과 도시를 한눈에</small>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="material-symbols-outlined">concierge</span>
+          <div>
+            <strong>호텔식 컨시어지</strong>
+            <small>차별화된 서비스</small>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="project-overview" class="section overview-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-label">Project Overview</p>
+            <h2>사업개요</h2>
+            <p>대구의 새로운 랜드마크, 어나드범어의 가치를 확인하세요.</p>
+          </div>
+
+          <div class="overview-grid">
+            <div class="overview-card">
+              <div class="card-top">사업명</div>
+              <div class="card-bottom">어나드범어</div>
+            </div>
+            <div class="overview-card">
+              <div class="card-top">대지위치</div>
+              <div class="card-bottom">대구광역시 수성구 범어동 일원</div>
+            </div>
+            <div class="overview-card">
+              <div class="card-top">건축규모</div>
+              <div class="card-bottom">지하 6층 ~ 지상 37층</div>
+            </div>
+            <div class="overview-card">
+              <div class="card-top">세대수</div>
+              <div class="card-bottom">공동주택 604세대 / 오피스텔 146실</div>
+            </div>
+            <div class="overview-card">
+              <div class="card-top">주차대수</div>
+              <div class="card-bottom">세대당 2.17대(공동주택)</div>
+            </div>
+            <div class="overview-card">
+              <div class="card-top">대지면적</div>
+              <div class="card-bottom">17,598.80㎡</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section banner-section">
+        <div class="container banner-box">
+          <div>
+            <p class="mini-label">Premium Residential</p>
+            <h3>범어의 자부심, 지금 만나보세요</h3>
+          </div>
+          <a href="#contact" class="pill-btn inverse">잔여호실 상담</a>
+        </div>
+      </section>
+
+      <section class="section lifestyle-section">
+        <div class="container">
+          <div class="section-head center">
+            <p class="section-label">Premium Life</p>
+            <h2>어나드범어가 선사하는 특별한 가치</h2>
+            <p>
+              범어의 중심에서 만나는 하이엔드 라이프스타일.<br />
+              당신의 삶을 완벽하게 채워줄 네 가지 프리미엄을 확인하세요.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="material-symbols-outlined">school</span>
+              <h4>명문 학군과 교통</h4>
+              <p>
+                범어의 중심에서 누리는 쾌속 교통망과 대구 최고의 명문 학군이 만나는
+                교육의 중심지입니다.
+              </p>
+              <a href="#location">Read More</a>
+            </article>
+            <article class="feature-card">
+              <span class="material-symbols-outlined">fitness_center</span>
+              <h4>하이엔드 커뮤니티</h4>
+              <p>
+                피트니스, 골프연습장, 프라이빗 라운지 등 입주민의 품격을 높여주는
+                전용 커뮤니티 시설을 제공합니다.
+              </p>
+              <a href="#gallery">Read More</a>
+            </article>
+            <article class="feature-card">
+              <span class="material-symbols-outlined">park</span>
+              <h4>친환경 조경 설계</h4>
+              <p>
+                도심 속에서 사계절의 변화를 누릴 수 있는 자연이 흐르는 프라이빗한
+                환경을 조성했습니다.
+              </p>
+              <a href="#complex-plan">Read More</a>
+            </article>
+            <article class="feature-card">
+              <span class="material-symbols-outlined">security</span>
+              <h4>안전한 생활 환경</h4>
+              <p>
+                스마트 홈 시스템과 지하 주차를 비롯한 첨단 설비로 편안하고 안전한
+                일상을 제공합니다.
+              </p>
+              <a href="#contact">Read More</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="complex-plan" class="section complex-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-label">Complex Plan</p>
+            <h2>단지 배치도</h2>
+            <p>어나드범어의 혁신적인 단지 설계를 확인하세요.</p>
+          </div>
+
+          <div class="complex-layout">
+            <div class="plan-visual">
+              <img src="https://www.anadd.co.kr/apt/sub/complex.jpg" alt="단지 배치도" />
+            </div>
+            <div class="plan-details">
+              <div class="detail-item">
+                <span class="material-symbols-outlined">fitness_center</span>
+                <div>
+                  <h4>커뮤니티 프리미엄</h4>
+                  <p>다양한 커뮤니티 시설이 완성된 고급 주거공간</p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <div>
+                  <h4>AiQ 스마트 홈</h4>
+                  <p>편리하고 안전한 생활 환경을 위한 스마트 시스템</p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="material-symbols-outlined">signal_cellular_alt</span>
+                <div>
+                  <h4>최적의 통신 환경</h4>
+                  <p>입주민 편의를 우선하는 이동통신 설비 환경</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="section location-section">
+        <div class="container location-grid">
+          <div class="location-copy">
+            <p class="section-label dark">Premium Location</p>
+            <h2>어나드범어의 압도적 입지 가치</h2>
+            <p>
+              대구의 자부심, 범어의 중심에서 가장 빛나는 삶이 시작됩니다.
+            </p>
+            <ul>
+              <li><span class="material-symbols-outlined">check_circle</span> 범어역 도보 3분</li>
+              <li><span class="material-symbols-outlined">check_circle</span> 동대구역 복합환승센터 인접</li>
+              <li><span class="material-symbols-outlined">check_circle</span> 학원가·명문 학교 도보권</li>
+              <li><span class="material-symbols-outlined">check_circle</span> 백화점, 대형마트, 공원 인프라</li>
+            </ul>
+          </div>
+
+          <div class="map-card">
+            <img
+              src="https://images.unsplash.com/photo-1520986606214-8efc7f5e2d53?auto=format&fit=crop&w=1000&q=80"
+              alt="범어동 입지 이미지"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery-section">
+        <div class="container">
+          <div class="section-head center">
+            <p class="section-label">Gallery</p>
+            <h2>프리미엄 라이프스타일의 건축과 분위기</h2>
+          </div>
+          <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="아파트 외관" />
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="실내 인테리어" />
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="커뮤니티 공간" />
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="주거 환경" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-box">
+          <div class="contact-copy">
+            <p class="section-label">Consultation</p>
+            <h2>더 자세한 정보가 필요하신가요?</h2>
+            <p>
+              어나드범어의 프리미엄 가치를 모델하우스에서 직접 확인해보세요.<br />
+              전문 상담사가 상세한 분양 정보를 안내해 드립니다.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a href="tel:010-2735-5664" class="primary-btn">전화 상담</a>
+            <a href="sms:010-2735-5664" class="secondary-btn">문자 상담</a>
+          </div>
+
+          <div class="phone-panel">
+            <span class="material-symbols-outlined">call</span>
+            <div>
+              <small>문의전화</small>
+              <strong>010-2735-5664</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="brand small">
+          <img src="https://www.xn--910bx5c8wm5ojda.online/land_logo.png" alt="어나드범어" />
+        </div>
+        <p>© 2025 Anadeu Beomeo. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
